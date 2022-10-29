@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sea Food Website</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Sea Foods Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+		
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+
+<div class="banner">
+	<div class="header-main">
+	  <div class="container">
+	        <div class="header-navg">
+	        	<span class="menu"> <img src="images/icon.png" alt=""/></span>
+				<ul class="res">
+					<li><a class="active" href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="recipies.html">RECIPIES</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				 <script>
+                                  $( "span.menu").click(function() {
+                                                                    $(  "ul.res" ).slideToggle("slow", function() {
+                                                                     // Animation complete.
+                                                                     });
+                                                                     });
+                 </script>
+			</div>
+			<div class="search">
+				<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+				<input type="submit" value="">
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+		</div>
+			<div class="slider">
+                  <section class="slider">
+                      <div class="flexslider">
+                      <ul class="slides">
+                  <li>
+    	           <p>When you choose to buy sustainable seafood, you push suppliers to source more environmentally responsible products, driving significant improvements throughout the industry. Ultimately, your choices have an impact on the health of the ocean. </p>
+  	    		</li>
+				<li>
+					<p>From small family-run shrimp farms in Vietnam to large tuna fishing fleets off the Atlantic coast, every seafood product has a story to tell. Knowing the details of how and where your seafood is harvested is key to protecting our ocean and ensuring a long-term supply of seafood.</p>
+				</li>
+				<li>
+					Billions of people around the world rely on seafood for nutrition and their livelihoods. As this number continues to grow, sustainable fishing and farming methods are needed to meet the demand — and protect the environment.
+				</li>
+ 	    		
+        </div>
+      </section>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</div>
+</div>
+
+<div class="seegrid">
+	<div class="container">
+		<div class="seegrid-main">
+			<div class="col-md-6 seegrid-left">
+				<span class="flyfish">  </span>
+				<h3>THE ROLE OF SEAFOOD</h3>
+				<P>Seafood is responsible for some big numbers every year. According to the United Nations, seafood provides essential nutrition to over three billion people worldwide. To meet this global demand, we harvest over 179 million tons of wild and farmed seafood each year. This number will continue to increase as the world’s population grows.</P>
+			</div>
+			<div class="col-md-6 seegrid-right">
+				<img src="images/gr.jpg" alt=""/>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="gallery-inf">
+	<div class="container">
+		<div class="gallery-main">
+		<div class="work-bottom">
+				<ul id="filters" class="clearfix">
+						<li><span class="filter cr" data-filter="app card icon logo web"> </span></li>
+						<li><span class="filter fi" data-filter="app"> </span></li>
+						<li><span class="filter san" data-filter="card"> </span></li>
+						<li><span class="filter octo" data-filter="icon"> </span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logos mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go thickbox">
+						     <img src="images/gr5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					</div>	
+					<div class="clearfix"> </div>				
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="footer">
+	<div class="footer-bg">
+	<div class="container">
+		<div class="footer-main">
+			<div class="footer-top">
+				<i> </i>
+				<span class="ver-line"> </span>
+			</div>
+			<div class="footer-bottom">
+				<div class="email">
+					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+				</div>
+				<div class="sign-up">
+					<input type="submit"  value="Subscribe"/>
+				</div>
+			   <div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="layout">
+				<p> &copy vivek mhetre. All rights reserved.</p>
+			</div>
+			<div class="clearfix"> </div>
+	   </div>
+	</div>
+  </div>
+</div>
+
+</body>
+</html>
